@@ -1,9 +1,9 @@
 /***
 |''Name:''|PlantUmlPlugin|
-|''Description:''|Integrates PlantUML (http://http://plantuml.sourceforge.net/index.html) diagrams into TiddlyWiki|
+|''Description:''|Integrates PlantUML (http://plantuml.sourceforge.net/index.html) diagrams into TiddlyWiki|
 |''Author:''|Anibal Caceres|
-|''Source:''|http://www.MyWebSite.com/#ExamplePluginCAMBIARLO|
-|''CodeRepository:''|http://svn.tiddlywiki.org/Trunk/contributors/MyDirectory/plugins/ExamplePlugin.jsCAMBIARLO |
+|''Source:''|https://github.com/anibalch/tiddlywiki-plantuml/PlantUmlPlugin.js|
+|''CodeRepository:''|https://github.com/anibalch/tiddlywiki-plantuml|
 |''Version:''|0.1|
 |''Status:''|beta|
 |''Date:''|Nov 05, 2012|
@@ -12,7 +12,7 @@
 |''~CoreVersion:''|2.3|
 
 !!Description
-Allows using PlantUML language for diagrams inside TiddlyWiki tiddlers, and the diagrams will be shown as images when the tiddler is opened.
+Allows using PlantUML language for diagrams inside TiddlyWiki tiddlers, and the diagrams will be shown as images when the tiddler is open.
 It only works online, as it uses the PlantUML server to generate the images of the diagrams.
 
 !!Usage
@@ -33,10 +33,10 @@ Bob --> Alice: Authentication Response
 if(!version.extensions.PlantUmlPlugin) {
 version.extensions.PlantUmlPlugin = {installed:true};
 
-//////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
 // rawdeflate.js
 // Taken from: https://github.com/johan/js-deflate
-//////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
 
 /*
 * $Id: rawdeflate.js,v 0.3 2009/03/01 19:05:05 dankogai Exp dankogai $
