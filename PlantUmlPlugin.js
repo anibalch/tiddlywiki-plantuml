@@ -12,18 +12,20 @@
 |''~CoreVersion:''|2.3|
 
 !!Description
-Allows using PlantUML language for diagrams inside TiddlyWiki tiddlers, and the diagrams will be shown as images when the tiddler is open.
-It only works online, as it uses the PlantUML server to generate the images of the diagrams.
+Plugin for easy integration of UML diagrams in [[TiddlyWiki|http://tiddlywiki.com]], using [[PlantUML|http://plantuml.sourceforge.net]].
+The diagrams are written inside Tiddlywiki tiddlers, using the PlantUML syntax, and will be shown as images when the tiddler is opened.
+It only works online, as it uses the online [[PlantUML server|http://www.plantuml.com]] to generate the images.
 
 !!Usage
-*To include it in your TiddlyWiki, create a tiddler for this plugin: new tiddler, with the plugin code as the content, and with a tag called systemConfig.
-*To use it, you'll have to use the macro {{{plantUml}}} in your tiddler, with the following format: {{{<<plantUml "diagram specification">>}}}. Example:
+*To include the plugin in your TiddlyWiki, create a tiddler for it: new tiddler, with the plugin code as the content, and with a tag called {{{systemConfig}}}.
+*To use it, you'll have to use the macro {{{plantUml}}} in your tiddler, with the following format: {{{<<plantUml 'diagram specification' 'alternate text'>>}}}, where {{{'alternate text'}}} is optional. Example:
 {{{
 <<plantUml 
-"@startuml
+'@startuml
 Alice -> Bob: Authentication Request
 Bob --> Alice: Authentication Response
-@enduml"
+@enduml'
+'simple sequence diagram'
 >>
 }}}
 ***/
