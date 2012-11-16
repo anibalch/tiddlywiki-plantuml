@@ -1,6 +1,3 @@
-tiddlywiki-plantuml
-===================
-
 Description
 -----------
 Plugin for easy integration of UML diagrams in [TiddlyWiki](http://tiddlywiki.com), using [PlantUML](http://plantuml.sourceforge.net).
@@ -12,6 +9,7 @@ It only works online, as it uses the online [PlantUML server](http://www.plantum
 Installation
 ------------
 To include the plugin in your TiddlyWiki, create a tiddler for it: new tiddler, with the plugin code (`PlantUmlPlugin.js`) as the content, and with a tag called `systemConfig`.
+![Installation](http://img12.imageshack.us/img12/1842/twpumlplugininstall.png)
 
 Usage
 -----
@@ -22,14 +20,10 @@ To use it, you'll have to use the macro `plantUml` in your tiddler, with the fol
 Where the `'alternate text'` is optional.
 
 Example:
+![Usage edit](http://imageshack.us/a/img338/8294/twpumlpluginsampleedit.png)
 
-    <<plantUml
-    '@startuml
-    Alice -> Bob: Authentication Request
-    Bob --> Alice: Authentication Response
-    @enduml'
-    'simple sequence diagram'
-    >>
+This will generate the following tiddler:
+![Usage result](http://imageshack.us/a/img820/1554/twpumlpluginsampleresul.png)
 
 Author
 ------
